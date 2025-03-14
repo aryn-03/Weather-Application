@@ -73,3 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.style.backgroundImage = `url('${savedBg}')`;
     }
 });
+
+// Allow pressing Enter key to search
+document.getElementById('city').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        getWeather();
+    }
+});
